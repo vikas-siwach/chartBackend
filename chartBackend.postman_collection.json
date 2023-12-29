@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "5815571e-17ab-478c-ab41-e8b46263bf88",
+		"name": "chartBackend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11984342"
+	},
+	"item": [
+		{
+			"name": "Get All Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/v1/chart",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"chart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "excelFile",
+							"type": "file",
+							"src": "/home/speqto/Downloads/excelFileChart.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8081/v1/chart/upload",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"chart",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
